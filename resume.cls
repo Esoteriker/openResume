@@ -41,7 +41,7 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.10em}
-\linespread{1.03}
+\linespread{1.02}
 \pagestyle{empty}
 \pagenumbering{gobble}
 \setlength{\tabcolsep}{0pt}
@@ -97,7 +97,7 @@
   {\Large\bfseries #1\par}
   \vspace{0.11em}
   {\color{ResumeRule}\rule{\linewidth}{0.55pt}}\par
-  \vspace{0.10em}
+  \vspace{0.13em}
 }
 
 \newcommand{\ExperienceEntry}[5]{%
@@ -107,7 +107,7 @@
     }%
     \textit{#3} & \textit{#4}
   \end{tabularx}
-  \vspace{-0.58em}
+  \vspace{-0.48em}
   \begin{resumeitems}
     #5
   \end{resumeitems}
@@ -116,7 +116,7 @@
 
 \newcommand{\ProjectEntry}[2]{%
   \textbf{#1}\par
-  \vspace{-0.58em}
+  \vspace{-0.47em}
   \begin{resumeitems}
     #2
   \end{resumeitems}
@@ -132,7 +132,7 @@
       \textbf{#3}\ifstrempty{#4}{}{~\textit{#4}}%
     }
   \end{tabularx}
-  \vspace{-0.08em}
+  \vspace{-0.02em}
 }
 
 \newcommand{\SkillLine}[2]{%
