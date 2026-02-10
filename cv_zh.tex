@@ -1,0 +1,37 @@
+\documentclass{resume}
+\usepackage{xeCJK}
+\IfFontExistsTF{Songti SC}{
+  \setCJKmainfont{Songti SC}
+}{
+  \IfFontExistsTF{Heiti SC}{
+    \setCJKmainfont{Heiti SC}
+  }{
+    \setCJKmainfont{Hiragino Sans GB}
+  }
+}
+\input{data_zh.tex}
+
+\begin{document}
+\MakeHeader
+
+\Section{\SectionWorkExperience}
+\ExperienceEntry{\ExpOneCompany}{\ExpOneLocation}{\ExpOneTitle}{\ExpOneTime}{\ExpOneBullets}
+\ExperienceEntry{\ExpTwoCompany}{\ExpTwoLocation}{\ExpTwoTitle}{\ExpTwoTime}{\ExpTwoBullets}
+
+\Section{\SectionProjects}
+\ProjectEntry{\ProjectOneName}{\ProjectOneBullets}
+\ProjectEntry{\ProjectTwoName}{\ProjectTwoBullets}
+
+\Section{\SectionEducation}
+\EducationEntry{\EduOneSchool}{\EduOneDegree}{\EduOneLocation}{\EduOneTime}
+\EducationEntry{\EduTwoSchool}{\EduTwoDegree}{\EduTwoLocation}{\EduTwoTime}
+\EducationEntry{\EduCertSchool}{\EduCertDegree}{\EduCertLocation}{\EduCertTime}
+
+\Section{\SectionSkills}
+\SkillLine{\SkillProgrammingLabel}{\SkillProgramming}
+\SkillLine{\SkillFrameworksLabel}{\SkillFrameworks}
+\SkillLine{\SkillToolsLabel}{\SkillTools}
+\SkillLine{\SkillPMLabel}{\SkillPM}
+\SkillLine{\SkillLanguagesLabel}{\SkillLanguages}
+
+\end{document}
